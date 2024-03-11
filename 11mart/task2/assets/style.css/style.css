@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.triangle{
+    margin: 10px 0;
+    width: 100px;
+    height: 100px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+}
+
+.downtriangle{
+    margin: 10px 0;
+    width: 100px;
+    height: 100px;
+    border-top: 100px solid blueviolet;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.duzbucaq{
+    margin: 10px 0;
+    height: 0px;
+    width: 0px;
+    border-left: 100px solid red;
+    border-top: 100px solid transparent;
+}
+
+.duzqabi{
+    margin: 0 10px;
+    height: 0px;
+    width: 0px;
+    border-right: 100px solid red;
+    border-top: 100px solid transparent;
+}
+
+.duz{
+    margin: 0 10px;
+    height: 0px;
+    width: 0px;
+    border-right: 100px solid red;
+    border-bottom: 100px solid transparent;}
+
+.qabi{
+    margin: 0 10px;
+    height: 0px;
+    width: 0px;
+    border-left: 100px solid red;
+    border-bottom: 100px solid transparent;
+}

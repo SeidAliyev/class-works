@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+/* .container {
+  margin: 0 auto;
+} */
+
+.orange {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

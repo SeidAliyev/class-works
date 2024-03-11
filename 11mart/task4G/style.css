@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 1000px;
+}
+
+.nav {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-evenly;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.link {
+  margin: 0 10px 0 10px;
+}
+
+p {
+  padding: 5px;
+}
+
+.container {
+  position: relative;
+  margin: 0px auto;
+  width: 200px;
+  background-color: burlywood;
+  border: 1px solid gray;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.imgg {
+  margin: 15px 20px 30px 20px;
+}
+
+.fa-regular {
+  margin: 5px;
+  position: absolute;
+  right: 4px;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.hizli {
+  margin: 5px;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.kargo {
+  position: absolute;
+  margin: 5px;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: yellow;
+  top: 50px;
+  border-radius: 10px;
+}
+
+.good {
+  display: flex;
+  justify-content: center;
+}

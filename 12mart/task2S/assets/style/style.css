@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ram {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.rum {
+  position: relative;
+  width: 700px;
+  height: 300px;
+}
+
+.aa {
+  border: 10px solid blue;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bb {
+  border: 10px solid black;
+  top: 0;
+  right: 250px;
+  z-index: 10;
+}
+
+.cc {
+  border: 10px solid red;
+  top: 0;
+  right: 0px;
+  z-index: 2;
+}
+
+.dd {
+  border: 10px solid yellow;
+  bottom: 0;
+  left: 120px;
+  z-index: 3;
+}
+
+.ee {
+  border: 10px solid green;
+  bottom: 0;
+  right: 120px;
+  z-index: 4;
+}

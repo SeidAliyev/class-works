@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.whitesmoke {
+  background-color: whitesmoke;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  background-color: whitesmoke;
+}
+.topnav span {
+  margin: 0 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+.navRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* drop ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.dropdown-content {
+  position: absolute;
+}
+.dropbtn {
+    width: 60px !important;
+  font-size: 1rem;
+  color: black !important;
+  background-color: white !important;
+  margin-right: 7px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 122px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+/* drop ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: chocolate;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-left: 15px;
+}
+.navRight a {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 15px;
+  font-weight: 500;
+  color: black;
+}
+.navRight button {
+  background-color: chocolate;
+  color: white;
+  height: 80px;
+  width: 122px;
+  border: 1px solid white;
+}
+.fa-brands {
+  background-color: white;
+  padding: 10px;
+  color: chocolate;
+}
+.fa-solid {
+  color: chocolate;
+}
+.fa-arrow-right {
+  color: aliceblue;
+}
+.slider {
+  height: 700px;
+  background-image: url("https://picsum.photos/200/300");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 0;
+  width: 600px;
+}
+.read {
+  width: 140px;
+  height: 40px;
+  border: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.choco {
+  background-color: chocolate;
+  color: aliceblue;
+}
+.slider h1 {
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider h3 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider p {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}

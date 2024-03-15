@@ -18,16 +18,16 @@ body {
 
 @keyframes move {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0);
   }
   25% {
-    transform: translate(calc(1276px - 100px), 0);
+    transform: translate(calc(1920px - 100px), 0);
   }
   50% {
-    transform: translate(calc(1276px - 100px), calc(104px - 100px));
+    transform: translate(calc(1920px - 100px), calc(100vh - 100px));
   }
   75% {
-    transform: translate(0, calc(1276px - 100px));
+    transform: translate(0, calc(1920px - 100px));
   }
   100% {
     transform: translate(0, 0);

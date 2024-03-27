@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+#white {
+  border-bottom: 1px dotted rgb(161, 161, 161);
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar img {
+  padding: 0 15px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navbar ul .navA {
+  padding: 0 15px;
+}
+.navbar ul .navA a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500px;
+}
+
+#hexashop {
+  margin: 80px 0;
+}
+#hexashop .boxarea {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 0;
+  height: 793px;
+}
+#hexashop .boxarea .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+#hexashop .boxarea .box p {
+  color: white;
+  text-align: center;
+}
+#hexashop .boxarea .box h3 {
+  color: white;
+}
+#hexashop .boxarea .littlebox {
+  background-image: url(/assets/images/image/baner-right-image-04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hexashop .boxarea .mainbox {
+  background-size: contain;
+  background-image: url(/assets/images/image/left-banner-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+#hexashop .boxarea .mainbox h3 {
+  font-size: 52px;
+  color: white;
+}
+
+#mens {
+  margin: auto;
+  max-width: 1300px;
+}
+#mens .content {
+  margin: 30px 0;
+}
+#mens .content h3 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+#mens .mainproducts {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#mens .mainproducts .product {
+  max-width: 370px;
+}
+#mens .mainproducts .product .star {
+  padding: 30px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mens .mainproducts .product .star h4 {
+  font-size: 22px;
+}
+#mens .mainproducts .product .star .group {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mens .mainproducts .product .price {
+  color: rgb(148, 148, 148);
+  font-weight: 700;
+}
+
+html * {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=app.css.map */

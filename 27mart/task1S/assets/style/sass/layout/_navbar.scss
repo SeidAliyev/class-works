@@ -1,0 +1,32 @@
+.container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  #white {
+    border-bottom: 1px dotted rgb(161, 161, 161);
+  }
+  
+  .navbar {
+    img {
+      padding: 0 15px;
+    }
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      .navA {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 15px;
+          font-weight: 500px;
+        }
+        padding: 0 15px;
+      }
+    }
+  }

@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  background-color: black;
+}
+#header .black {
+  background-color: black !important;
+}
+
+#first {
+  padding: 60px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#first .mywrt {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#first .mywrt h3 {
+  margin: 30px 0;
+  font-size: 40px;
+  color: white;
+}
+#first .mywrt p {
+  margin: 20px 0;
+  color: white;
+  text-align: center;
+}
+#first .mywrt .mybuts {
+  display: flex;
+}
+#first .mywrt .mybuts button {
+  margin: 10px;
+}
+
+#thesecond .Featured {
+  padding: 35px 0;
+}
+#thesecond .Featured .row h4 {
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+#thesecond .Featured .row p {
+  margin: 15px 0;
+  max-width: 400px;
+}
+#thesecond .Featured .row .fa-folder {
+  color: white;
+}
+#thesecond .Featured .row .fa-regular {
+  border-radius: 8px;
+  background-color: rgb(0, 132, 255);
+  padding: 17px;
+}
+
+html * {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,31 @@
+#explore{
+    border-top: 1px dashed gray;
+    padding: 80px 0;
+    .theblog{
+        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .bigblog{
+        grid-column: 1/3;
+        grid-row: 1/3;
+        height: 510px;
+        h3{
+            padding: 15px 0;
+            font-size: 35px;
+        }
+        .black{
+            color: black;
+        }
+        p{  
+            color: rgba(128, 128, 128, 0.565) ;
+            font-size: 20px;
+            text-indent: 10px;
+            font-weight: 600;
+        }
+    }
+    .blogs{
+        height: 255px;
+        background-image: url(/assets/images/image/explore-image-01.jpg);
+    }
+}

@@ -29,7 +29,9 @@
             font-size: 52px;
             color: white;
         }
-      background-size: contain;
+        p{
+          margin: 28px 0;
+        }
       background-image: url(/assets/images/image/left-banner-image.jpg);
       background-repeat: no-repeat;
       background-size: cover;

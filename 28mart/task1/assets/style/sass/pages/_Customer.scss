@@ -1,0 +1,37 @@
+#Customer {
+  .containerSS {
+    margin: auto;
+    max-width: 586px;
+    h3 {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 32px;
+      font-weight: bolder;
+    }
+    p {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+    .mesaj {
+      .sms {
+        margin: 10px;
+        p {
+          span {
+            color: rgb(177, 177, 177);
+          }
+        }
+        border-radius: 15px;
+        padding: 18px;
+        border: 1px solid rgb(170, 170, 170);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .fa-comment-dots {
+          font-size: 40px;
+          color: rgb(0, 132, 255);
+        }
+      }
+    }
+  }
+}

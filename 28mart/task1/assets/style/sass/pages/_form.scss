@@ -1,0 +1,38 @@
+#getInTouch{
+    padding: 45px 0;
+    background-color: whitesmoke;
+    .GItouch{
+        max-width: 600px;
+        .topgit{
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            i{
+                color: white;
+                background-color: rgb(0, 72, 255);
+                border-radius: 10px;
+                padding: 12px;
+            }
+            h3{
+                font-size: 32px;
+                font-weight: 600;
+            }
+        }
+        .measuremsg{
+            height: 140px;
+        }
+    }
+}
+footer{
+    background-color: #212529;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: white;
+    }
+}

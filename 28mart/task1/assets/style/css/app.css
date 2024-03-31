@@ -63,6 +63,46 @@
   padding: 17px;
 }
 
+#getInTouch {
+  padding: 45px 0;
+  background-color: whitesmoke;
+}
+#getInTouch .GItouch {
+  max-width: 600px;
+}
+#getInTouch .GItouch .topgit {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#getInTouch .GItouch .topgit i {
+  color: white;
+  background-color: rgb(0, 72, 255);
+  border-radius: 10px;
+  padding: 12px;
+}
+#getInTouch .GItouch .topgit h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+#getInTouch .GItouch .measuremsg {
+  height: 140px;
+}
+
+footer {
+  background-color: #212529;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: white;
+}
+
 html * {
   font-family: "Roboto", sans-serif;
 }

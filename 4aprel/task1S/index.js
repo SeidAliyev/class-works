@@ -1,6 +1,6 @@
-"use strict";
+// "use strict";
 
-let arr = [14, 20, 35, 40, 57, 60, 100];
+// let arr = [14, 20, 35, 40, 57, 60, 100];
 
 // function bolunen(array) {
 //     let cout=0
@@ -45,17 +45,17 @@ let arr = [14, 20, 35, 40, 57, 60, 100];
 
 // reqemsayi(numbers)
 
-let cumle = prompt("cumle daxil edin");
+// let cumle = prompt("cumle daxil edin");
 
-function soz(ac) {
-  let b = ac.split(" ");
-  let c = b[0];
-  for (let i = 0; i < b.length; i++) {
-    if (b[i].length > c.length){
-        c=b[i]
-    }
-  }
-  console.log(c);
-}
+// function soz(ac) {
+//   let b = ac.split(" ");
+//   let c = b[0];
+//   for (let i = 0; i < b.length; i++) {
+//     if (b[i].length > c.length){
+//         c=b[i]
+//     }
+//   }
+//   console.log(c);
+// }
 
-soz(cumle);
+// soz(cumle);

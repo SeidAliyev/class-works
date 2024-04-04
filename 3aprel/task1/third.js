@@ -8,15 +8,11 @@ let bol = []
 
 for (let a = 0; a < arr.length; a++) {
     if(arr[a]===true || arr[a]===false){
-        bol.push(arr[a])
+        // bol.push(arr[a])
+        console.log(arr[a-1],arr[a],arr[a+1])
     }    
 }
 
-// for (let b = 0; b < arr.length; b++) {
-//     if (arr[b]=bol){
-//         console.log(b)
-//     }    
-// }
 
 
 // task 18
@@ -32,3 +28,16 @@ for (let c = 0; c < arr.length; c++) {
     }
 }
 console.log(enuzunsoz);
+
+// task 20
+let cont=0
+for (let f = 0; f < arr.length; f++) {
+    for (let h = 0; h < arr[f].length; h++) {
+        if (typeof(arr[f]==String)){ 
+            if (arr[f][h] === arr[f][h].toUpperCase()){
+            console.log(arr[f])
+            cont++
+        }}
+       
+    }
+}

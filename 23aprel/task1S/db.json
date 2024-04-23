@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+          "id": "1",
+          "name":"Said",
+          "surname":"Aliyev",
+          "age":20
+        },
+        {
+            "id": "2",
+            "name":"Omer",
+            "surname":"jafarov",
+            "age":21
+          },
+          {
+            "id": "3",
+            "name":"Shovgiu",
+            "surname":"Ceqiyev",
+            "age":22
+          }
+    ]
+}

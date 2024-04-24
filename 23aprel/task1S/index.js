@@ -52,15 +52,22 @@ async function createProducts() {
 
 
     const removeAllButton = document.querySelector(".delete");
-    removeAllButton.addEventListener("click", async(e) => {
-        e.preventDefault();
+    removeAllButton.addEventListener("click", async (e) => {
+        // e.preventDefault();
         await removeAllData(usersURL);
         data = [];
         createData(data);
     });
 
     const deleteButtons = document.querySelectorAll(".delete-item");
-
+    deleteButtons.forEach(button => {
+        button.addEventListener("click", async (e) => {
+            const itemId = e.target.getAttribute("data");
+            await deleteById(usersURL, itemId);
+            let newData = await getAllDatas(usersURL);
+            createData(newData);
+        });
+    });
 
 }
 
@@ -84,11 +91,3 @@ function createData(mainData){
     });
 }
 
-deleteButtons.forEach(button => {
-    button.addEventListener("click", async (e) => {
-        const itemId = e.target.getAttribute("data")
-        await deleteById(usersURL, itemId);
-        let newData = await getAllDatas(usersURL);
-        createData(newData);
-    });
-});

@@ -11,6 +11,19 @@ const postDatasId = async (url,obj) => {
     return data
 }
 
+const deleteById = async (url, id) => {
+    let res = await axios.delete(url + "/" + id);
+    let data = res.data;
+    return data;
+  };
+
+  async function removeAllData(url) {
+    let res = await axios.delete(url);
+    let data = res.data;
+    return data;
+}
+  
+
 let createUser = document.querySelector(".CreateElements")
 let tableMain = document.querySelector(".table-main")
 
@@ -20,7 +33,7 @@ async function createProducts() {
     let mainData = data
     createData(mainData)
 
-  createUser.addEventListener("submit", (e) => {
+  createUser.addEventListener("click", (e) => {
         e.preventDefault();
 
         const names = document.querySelector(".name")
@@ -28,13 +41,27 @@ async function createProducts() {
         const ages = document.querySelector(".age")
 
         let obj = {
-            name:"SAID",
-           surname:"SAIDOS",
-           age:12
+            id:data.length+1,
+            name:names.value,
+           surname:surnames.value,
+           age:ages.value
         };
         
         postDatasId(usersURL, obj);
     })
+
+
+    const removeAllButton = document.querySelector(".delete");
+    removeAllButton.addEventListener("click", async(e) => {
+        e.preventDefault();
+        await removeAllData(usersURL);
+        data = [];
+        createData(data);
+    });
+
+    const deleteButtons = document.querySelectorAll(".delete-item");
+
+
 }
 
 
@@ -52,7 +79,16 @@ function createData(mainData){
             <td>${elem.name}</td>
             <td>${elem.surname}</td>
             <td>${elem.age}</td>
-            <td></td>
+            <td><button class="delete-item" data="${elem.id}">Delete</button></td>
         </tr>`
     });
 }
+
+deleteButtons.forEach(button => {
+    button.addEventListener("click", async (e) => {
+        const itemId = e.target.getAttribute("data")
+        await deleteById(usersURL, itemId);
+        let newData = await getAllDatas(usersURL);
+        createData(newData);
+    });
+});

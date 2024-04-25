@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container{
+    margin: auto;
+    max-width: 1280px;
+}
+
+.myNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.signUp{
+    background-color: rgb(0, 102, 255);
+    border-radius: 8px;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+}

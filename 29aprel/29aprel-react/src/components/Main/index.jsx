@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect,useState } from 'react';
+import { useEffect,useReducer,useRef } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from "uuid";
 
@@ -7,50 +7,46 @@ import { v4 as uuidv4 } from "uuid";
 
 const Main = () => {
 
-    const [data, setdata] = useState([])
-    const [category, setCategory] = useState([])
-
-
-    // useEffect(()=>{
-    //     axios("https://northwind.vercel.app/api/categories").then(res=>{
-    //         console.log(res.data);
-    //         setdata(res.data)
-    //     })
-    // },[]);
-
-    const getAll = async () => {
-        let response = await axios.get("https://northwind.vercel.app/api/categories")
-        setdata(response.data)
+  function reducer(state,action) {
+    switch (action.value) {
+      case "setData":
+         return { ...state, data: action.data };
+      case "setBasket":
+         return { ...state, basket: action.basket };
+      case "inputValue":
+        return { ...state, value: action.value }
+      default:
+        break;
     }
+  }
 
-    const addCategories = async (e) => {
-       await e.preventDefault();
+  const [state, dispatch] = useReducer(reducer,{data:[],category:[],newValue:[]})
 
-        let newCat = {
-            name: category,
-        };
+    // const [data, setdata] = useState([])
+    // const [category, setCategory] = useState([])
 
-        let res = await axios.post("https://northwind.vercel.app/api/categories/",newCat)
-
-        setCategory([...category,res.data])
-    }
-
+    
     useEffect(() => {
-      getAll()
     }, [])
     
+    const myInput = useRef();
     
   return (
     <div className="container">
     <div className="addTask">
-      <form onSubmit={(e) =>addCategories(e)}>
-        <input id="input" type="text" placeholder="Add your task" value={category} onChange={(e)=> setCategory(e.target.value)}/>
-        <button id="add" className="btn" type='submit'>Add Task</button>
+      <form >
+        <input id="input" type="text" placeholder="Add your task" ref={myInput}/>
+        <button id="add" className="btn" type='submit' onClick={()=>{
+        dispatch({
+          type:"inputValue",
+          newValue:myInput
+        })
+        }}>Add Task </button>
       </form>
     </div>
     <div className="taskList">
       <ul>
-      {data.map((elem)=>{
+      {state.data.map((elem)=>{
         return(
             <li key={uuidv4()}>
           <span>{elem.name}</span>
@@ -58,7 +54,6 @@ const Main = () => {
         let mydata = data.filter(item=>item.id != elem.id)
 
         setdata(mydata)
-        axios.delete(`https://northwind.vercel.app/api/categories/${elem.id}`)
     }}>Delete Task</button>
     <button className="btn" onClick={()=>{
         let newVersion = prompt('new Name',elem.name)
@@ -69,7 +64,6 @@ const Main = () => {
             return item
         })
         setdata(newName)
-        axios.patch(`https://northwind.vercel.app/api/categories/${elem.id}`,{name:newVersion})
     }}>Edit</button>
         </li> 
         )}

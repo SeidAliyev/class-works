@@ -65,7 +65,8 @@ const AddItem = () => {
                 }
               >
                 Delete
-                <button onClick={() => {
+                </button>
+              <button onClick={() => {
                 let newName = prompt('New Name', todo.name);
                 if (newName !== null && newName.trim() !== "") {
                   dispatch({

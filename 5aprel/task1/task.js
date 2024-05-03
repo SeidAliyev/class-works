@@ -85,7 +85,7 @@ function axtaris(bb){
 
 // axtaris(products)
 
-let eded = prompt('ededi yazin')
+// let eded = prompt('ededi yazin')
 
 function palidrom(eded) {
     let reverse= eded.split('').reverse().join("")
@@ -100,4 +100,21 @@ function palidrom(eded) {
     }
 }
 
-palidrom(eded)
+// palidrom(eded)
+
+// const numbers = [4, 9, 16, 25];
+// let saida = numbers.map(Math.sqrt);
+
+// console.log(saida);
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+function myFunction(value, index, array) {
+  return value < 18;
+}
+// console.log(over18);
+
+
+

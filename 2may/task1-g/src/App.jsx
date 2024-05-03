@@ -16,16 +16,30 @@ function App() {
       case "SetProducts":
         return{
           ...state,
-          products: action.products
+          products: action.products,
+          filteredProd: action.products
         }
-    
+        case "SearchProd":
+          let arrs = state.products.filter((elem)=>{
+            elem.title.includes(action.searchValue)
+          })
+          return{ ...state, filteredProd: arrs}
+      case "A-Z":
+        let arr = [...state.products].sort((a,b)=>{
+          a.title.localeCompare(b.title)
+          })
+        return{...state, filteredProd: arr}
+        case "low-high":
+          let arrl = [...state.products].sort((a,b)=>{b.price-a.price})
+          return{...state, filteredProd: arrl}
       default:
         break;
     }
   }
 
   const [state, dispatch] = useReducer(reducer,{
-    products:[]
+    products:[],
+    filteredProd:[]
   })
 
   useEffect(() => {
@@ -44,8 +58,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<Admin state={state} dispatch = {dispatch}/>} />
-          <Route path="post" element={<Post state={state} dispatch = {dispatch} />} />
+          <Route index element={<Admin state={state} dispatch = {dispatch} />} />
+          <Route path="post" element={<Post state={state} dispatch = {dispatch}/>} />
           <Route path="edit" element={<Edit />} />
           <Route path="*" element={<NoPage />} />
         </Route>

@@ -1,4 +1,11 @@
 .AllArea{
     background-color: #141C30;
-    height: 100vh;
+}
+
+.MainArea{
+    background-color: #1F2A48;
+    width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 30px;
 }

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myIndustries{
+    max-width: 380px;
+}
+
+.mybut{
+    width: 380px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 17px 0 10px 0;
+    border-top: 1px  solid rgb(160, 160, 160);
+    border-bottom: 1px  solid rgb(159, 159, 159);
+}
+/* a{
+    text-decoration: none;
+}
+.mybut:hover{
+    background-color: rgb(57, 192, 255);
+    border-color: rgb(57, 192, 255);
+}
+
+
+.closed{
+    display: none;
+    max-width: 350px;
+    padding: 30px;
+    text-align: justify;
+}
+.plus{
+    display: block;
+}
+.minus{
+    display: none;
+} */

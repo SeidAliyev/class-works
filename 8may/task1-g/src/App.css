@@ -1,0 +1,9 @@
+.userPost{
+    display: none !important;
+}
+.Login{
+    height: 89.4vh;
+    width: 100%;
+    margin: auto;
+    background-color: #111827;
+}

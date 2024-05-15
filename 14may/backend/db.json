@@ -1,0 +1,16 @@
+{
+    "students":[
+        {
+            "name":"said",
+            "surname":"surname",
+            "age":20,
+            "city":"sumgait"
+        },
+        {
+            "name":"ilqar",
+            "surname":"quli",
+            "age":20,
+            "city":"sumgait"
+        }
+    ]
+}
